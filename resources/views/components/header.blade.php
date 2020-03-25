@@ -17,9 +17,9 @@
                                                                 </li>
                                 <li class="expand"><a href="">Sản phẩm</a>
                                         <ul class="restrain sub-menu">
-{{--                                                @foreach($categories as $cate)--}}
-{{--                                                    <li><a href="">{{$cate->c_name}}</a></li>--}}
-{{--                                                @endforeach--}}
+                                                @foreach($categories as $category)
+                                                    <li><a href="">{{$category->c_name}}</a></li>
+                                                @endforeach
 
                                         </ul>
                                 </li>

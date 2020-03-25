@@ -51,7 +51,8 @@
                 @if(isset($categories))
                     @foreach($categories as $category)
                         <option
-                            value="{{$category->id}}" {{old('pro_category_id',isset($product->pro_category_id)?$product->pro_category_id:'') == $category->id ? 'selected':''}}>{{$category->c_name}}</option>
+                            value="{{$category->id}}" {{old('pro_category_id',isset($product->pro_category_id)?$product->pro_category_id:'') == $category->id ? 'selected':''}}>{{$category->c_name}}
+                        </option>
                     @endforeach
                 @endif
             </select>
